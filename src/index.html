@@ -8,6 +8,47 @@
     <script async src="./scripts/app.ts"></script>
   </head>
   <body>
-    <div>Replace me with the exercise design</div>
+    <div class="container px-4 mx-auto">
+      <div class="grid-cols-8">
+        <div class="py-10">
+          <h1 class="text-center text-2xl md:text-3xl font-bold mb-3">Forgot your password?</h1>          
+          <p class="text-center md:text-lg mb-6">Please enter your email address below to recieve a password reset link.</p>
+          <!-- Start: Password reset form card-->
+          <div class="form-card md:w-4/5 mx-auto border bg-gray-50 p-4 md:p-10">
+            <div class="md:w-3/5 mx-auto">
+              <!-- Form error message -->
+              <div id="errorArea" class="hidden">
+                <h2 class="text-center text-red-500 mb-7 font-bold text-xl"></h2>
+              </div>
+              <!-- Form success message -->
+              <div id="successArea" class="hidden">
+                <h2 class="text-center text-blue-500 mb-2 font-bold text-xl">Success, we have emailed your password reset link.</h2>
+                <p class="text-center mb-7 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent blandit gravida orci, quis molestie elit volutpat</p>
+              </div>
+              <!-- Password reset form -->
+              <form id="passwordReset" class="mb-8">
+                <label for="emailInput" class="block text-base font-medium mb-2">Email address</label>
+                <input id="emailInput" type="email" class="block p-3 w-full border rounded border-gray-500" placeholder="Your email address">
+                <button type="submit" class="btn btn-primary mt-4 p-3 w-full md:w-3/5 bg-blue-800 text-white rounded">Submit</button>
+               </form>
+               <!-- Trouble resetting password accordion -->
+               <details closed>
+                <summary class="text-blue-500 mb-3">Are you having trouble resetting your password?</summary>
+                <div class="p-4 bg-white border border-gray-500">
+                  <p class="mb-2">We have had some customers who mistakenly believe they have a store account when infact they are only signed up to receive our VIP Club newsletter.</p>
+                  <p class="mb-4">If you receive our newsletter but have never made a purchase online this might apply to you, the best way to check this is to do the following:</p>
+                  <ol class="list-inside list-decimal text-xl">
+                    <li class="mb-2">Go back to <a href="" class="text-blue-500 underline">register page</a></li>
+                    <li class="mb-4">Register with your email address <small class="block">If you do already have an account the form will tell you</small></li>
+                  </ol>
+                  <p>If the form tells you you already have an account and the password reset doesn't work please contact the Customer Services team on <a href="tel:0339000094" class="text-blue-500 underline">033 900 0094</a></p>
+                </div>
+              </details> 
+            </div>
+           </div>
+        </div>
+        <!-- End: Password reset form card--> 
+      </div>
+    </div>
   </body>
 </html>
